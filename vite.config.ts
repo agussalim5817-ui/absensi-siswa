@@ -1,10 +1,10 @@
-
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  // Ganti 'absensi-informatika' dengan nama repository GitHub Anda
-  base: './', 
+  plugins: [react()],
   build: {
     outDir: 'dist',
+    emptyOutDir: true
   }
 });
